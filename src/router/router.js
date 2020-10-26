@@ -46,6 +46,9 @@ const questionDetail = r => require.ensure([], () => r(require('../page/service/
 const find = r => require.ensure([], () => r(require('../page/find/find')), 'find')
 const download = r => require.ensure([], () => r(require('../page/download/download')), 'download')
 
+//项目学习、记录
+const readme = r => require.ensure([], () => r(require('../page/aReadme/readme')), 'readme')
+
 
 
 
@@ -200,6 +203,11 @@ export default [{
         {
             path: '/download',
             component: download
+        },
+        //项目学习记录
+        {
+          path: '/readme',
+          component: readme
         },
         //服务中心
         {

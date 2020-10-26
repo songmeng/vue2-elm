@@ -118,7 +118,8 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"></use>
                         </svg>
                     </aside>
-                    <div class="myorder-div" style="border-bottom:0;">
+                    <!--  隐藏item下划线  style="border-bottom:0;" -->
+                    <div class="myorder-div">
                         <span>下载饿了么APP</span>
                         <span class="myorder-divsvg">
                             <svg fill="#bbb">
@@ -127,6 +128,22 @@
                         </span>
                     </div>
                 </router-link>
+              <!-- 项目学习、记录 -->
+              <router-link to='/readme' class="myorder">
+                <aside>
+                  <svg fill="#4aa5f0">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#order"></use>
+                  </svg>
+                </aside>
+                <div class="myorder-div" style="border-bottom:0;">
+                  <span>项目学习、记录 readme</span>
+                  <span class="myorder-divsvg">
+                      <svg fill="#bbb">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                      </svg>
+                  </span>
+                </div>
+              </router-link>
             </section>
         </section>
         <foot-guide></foot-guide>
