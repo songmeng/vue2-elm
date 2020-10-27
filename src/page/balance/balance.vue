@@ -32,33 +32,33 @@
 <script>
     import headTop from 'src/components/header/head'
     import alertTip from 'src/components/common/alertTip'
-    
+
     export default {
       data(){
             return{
                 showAlert: false,
-                alertText: null,
+                alertText: '--',
             }
         },
         mounted(){
-          
+
         },
         components: {
             headTop,
             alertTip,
         },
         computed: {
-           
+
         },
         methods: {
-            
+
         }
     }
 </script>
-  
+
 <style lang="scss" scoped>
     @import 'src/style/mixin';
-  
+
     .page{
         padding-top: 1.95rem;
         p, span{
