@@ -39,6 +39,20 @@
       components:{
         headTop,
       },
+      mounted() {
+
+
+
+          this.getReferrer();
+      },
+      methods:{
+          getReferrer:function () {
+            //需要放到服务器中，在本地的话返回空
+            // document.setR referrer  ='www.baidu.com';
+            let mReferrer = document.referrer;
+            console.log("document.referrer"+mReferrer);
+          },
+      }
     }
 </script>
 
