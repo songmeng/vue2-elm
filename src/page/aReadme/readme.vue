@@ -35,7 +35,7 @@
               {"q":"测试账号？","a":"  账号：testele 密码：testele"},
               {"q":"项目大量使用了section标签，而不是div？","a":"section和div的区别 ",url:"https://blog.csdn.net/sunshine940326/article/details/52606038"},
               {"q":"网络请求模块使用的fetch，和ajax、axios区别？","a":"ajax和axios、fetch的区别",url:"https://www.jianshu.com/p/8bc48f8fde75"},
-              {"q":"need beyond？","a":"  vuex "},
+              {"q":"need beyond？ vuex  是否可以用cookie替代？不可以，项目太大？","a":"  vuex "},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
