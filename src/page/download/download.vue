@@ -1,6 +1,6 @@
  <template>
   <div class="download_page">
-        <head-top head-title="下载" go-back='true'></head-top>
+        <head-top head-title="下载" go-back='false'></head-top>
         <section class="dowload_container">
             <img src='../../images/elmlogo.jpeg' class="logo_img">
             <p>下载饿了么APP</p>
@@ -50,7 +50,8 @@
                 }else{
                     try {
                         let elemIF = document.createElement("iframe");
-                        elemIF.src = 'http://cangdu.org/files/elm.apk';
+                        // elemIF.src = 'http://cangdu.org/files/elm.apk';
+                        elemIF.src = 'http://newzjzdd.zjzdd.cn/apk/zjzdd.apk';
                         elemIF.style.display = "none";
                         document.body.appendChild(elemIF);
                     } catch (e) {
@@ -61,10 +62,10 @@
         }
     }
 </script>
-  
+
 <style lang="scss" scoped>
     @import 'src/style/mixin';
-  
+
     .download_page{
         position: absolute;
         top: 0;
