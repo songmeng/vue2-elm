@@ -37,7 +37,7 @@
     import {getExpired} from 'src/service/getData'
     import loading from 'src/components/common/loading'
     import BScroll from 'better-scroll'
-    
+
     export default {
       data(){
             return{
@@ -69,12 +69,12 @@
                     this.expiredList = await getExpired(this.userInfo.user_id);
                     this.showLoading = false;
                     this.$nextTick(() => {
-                        new BScroll('#scroll_section', {  
+                        new BScroll('#scroll_section', {
                             deceleration: 0.001,
                             bounce: true,
                             swipeTime: 1800,
                             click: true,
-                        }); 
+                        });
                     })
                 }
             }
@@ -86,10 +86,10 @@
         }
     }
 </script>
-  
+
 <style lang="scss" scoped>
     @import 'src/style/mixin';
-  
+
     .rating_page{
         position: fixed;
         top: 0;
@@ -112,7 +112,7 @@
         padding-top: 1.95rem;
     }
     .hongbao_list_ul{
-        padding: 1rem .5rem;
+        padding: 2.02rem .5rem;
         .hongbao_list_li{
             background: #fff url(../../../images/expired.png) repeat-x ;
             background-size: .5rem .2rem;
@@ -151,7 +151,7 @@
                     p{
                         list-style-type: disc;
                         margin-left: -.7rem;
-                        @include sc(.4rem, #999);   
+                        @include sc(.4rem, #999);
                     }
                 }
             }

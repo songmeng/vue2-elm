@@ -4,7 +4,11 @@ import {
 
 export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 	type = type.toUpperCase();
-	url = baseUrl + url;
+	if (url.indexOf("http")==0){
+
+  }else{
+	  url = baseUrl + url;
+  }
 
 	if (type == 'GET') {
 		let dataStr = ''; //数据拼接字符串
@@ -29,13 +33,14 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 			mode: "cors",
 			cache: "force-cache"
 		}
+			// mode: "no-cors",
 
 		if (type == 'POST') {
 			Object.defineProperty(requestConfig, 'body', {
 				value: JSON.stringify(data)
 			})
 		}
-		
+
 		try {
 			const response = await fetch(url, requestConfig);
 			const responseJson = await response.json();

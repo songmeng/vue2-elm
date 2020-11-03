@@ -41,7 +41,8 @@
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
-              {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
+              {"q":"其他相关 vue-cli？","a":"静态文件css或自己的工具类：都是在 rootProject/src/ 目录下创建静态或业务需要文件夹文件；创建在外面（根目录），打包的时候容易出问题" +
+                  "/n axios在普通页面使用的封装"},
             ],
             listLearn:[
               {q:"",a:"彻底搞清楚javascript中的require、import和export",url:"https://www.cnblogs.com/libin-1/p/7127481.html"}

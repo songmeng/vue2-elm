@@ -469,3 +469,12 @@ export const signout = () => fetch('/v2/signout');
  * 改密码
  */
 export const changePassword = (username, oldpassWord, newpassword, confirmpassword, captcha_code) => fetch('/v2/changepassword', {username, oldpassWord, newpassword, confirmpassword, captcha_code}, 'POST');
+
+
+/**
+ * 测试
+ */
+// export const testBd = () => fetch('http://malltst.zjzdd.cn/enve/v1/envelope/info',{},'GET');
+// export const testBd = () => fetch('https://gank.io/api/v2/banners');
+export const testBd = () => fetch('http://www.bejson.com/knownjson/webInterface/');
+

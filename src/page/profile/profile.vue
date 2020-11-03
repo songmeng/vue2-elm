@@ -62,7 +62,7 @@
                     </div>
                 </router-link>
                 <!-- 积分商城 -->
-                <a href='https://home.m.duiba.com.cn/#/chome/index' class="myorder">
+                <section class="myorder" @click="showAlert = true">
                     <aside>
                         <svg fill="#fc7b53">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#point"></use>
@@ -76,7 +76,7 @@
                             </svg>
                         </span>
                     </div>
-                </a>
+                </section>
                 <!-- 饿了么会员卡 -->
                 <router-link to='/vipcard' class="myorder">
                     <aside>
@@ -150,12 +150,16 @@
         <transition name="router-slid" mode="out-in">
             <router-view></router-view>
         </transition>
+
+        <alert-tip v-if="showAlert" alert-text="no message" @closeTip="showAlert = false"></alert-tip>
     </div>
 </template>
 
 <script>
 import headTop from 'src/components/header/head'
 import footGuide from 'src/components/footer/footGuide'
+import alertTip from "../../components/common/alertTip";
+
 import {mapState, mapMutations} from 'vuex'
 import {imgBaseUrl} from 'src/config/env'
 import {getImgPath} from 'src/components/common/mixin'
@@ -172,6 +176,8 @@ export default {
             pointNumber : 0,       //积分数
             avatar: '',             //头像地址
             imgBaseUrl,
+
+            showAlert:false, //提示
         }
     },
     mounted(){
@@ -181,6 +187,7 @@ export default {
     components:{
         headTop,
         footGuide,
+        alertTip,
     },
 
     computed:{
