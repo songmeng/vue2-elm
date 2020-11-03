@@ -37,7 +37,7 @@
               {"q":"网络请求模块使用的fetch，和ajax、axios区别？","a":"ajax和axios、fetch的区别",url:"https://www.jianshu.com/p/8bc48f8fde75"},
               {"q":"need beyond？ vuex  是否可以用cookie替代？不可以，项目太大？","a":"  vuex "},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
-              {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
+              {"q":"vuex和localstorage存储数据有什么区别？","a":"完全就是两个东西，vuex是vue中的状态管理机制，是方便组件之间通信的；而localstorage是本地存储，是将数据存储到浏览器的方法，一般是在跨页面传递数据时使用。",url:"https://segmentfault.com/q/1010000009396002?utm_source=sf-similar-question"},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
               {"q":"如何运行项目？","a":"  Terminal -> (首次运行 npm install --save) Local: npm run dev"},
@@ -45,7 +45,13 @@
                   "/n axios在普通页面使用的封装"},
             ],
             listLearn:[
-              {q:"",a:"彻底搞清楚javascript中的require、import和export",url:"https://www.cnblogs.com/libin-1/p/7127481.html"}
+              {q:"",a:"彻底搞清楚javascript中的require、import和export",url:"https://www.cnblogs.com/libin-1/p/7127481.html"},
+              {q:"",a:"vuex和localstorage存储数据有什么区别？",url:"https://segmentfault.com/q/1010000009396002?utm_source=sf-similar-question"},
+
+
+              {q:"",a:"vuex和localstorage存储数据有什么区别？",url:"https://segmentfault.com/q/1010000009396002?utm_source=sf-similar-question"},
+              {q:"",a:"vuex和localstorage存储数据有什么区别？",url:"https://segmentfault.com/q/1010000009396002?utm_source=sf-similar-question"},
+              {q:"",a:"vuex和localstorage存储数据有什么区别？",url:"https://segmentfault.com/q/1010000009396002?utm_source=sf-similar-question"},
             ],
 
             listItem:[],
